@@ -1,6 +1,7 @@
 module ricardo.funcionariop1 {
     requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.graphics;
 
 
     opens ricardo.funcionariop1 to javafx.fxml;
