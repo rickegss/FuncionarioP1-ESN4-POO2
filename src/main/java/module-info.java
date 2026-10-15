@@ -8,4 +8,5 @@ module ricardo.funcionariop1 {
     exports ricardo.funcionariop1;
     exports ricardo.funcionariop1.controller;
     opens ricardo.funcionariop1.controller to javafx.fxml;
+    opens ricardo.funcionariop1.model to javafx.base;
 }

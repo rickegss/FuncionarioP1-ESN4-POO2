@@ -12,132 +12,93 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="684.0" spacing="12.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ricardo.funcionariop1.controller.CadastroController">
-   <children>
-      <Label text="Cadastro de Funcionario" />
-      <VBox prefHeight="200.0" prefWidth="100.0" spacing="6.0">
-         <children>
-            <Label text="Dados Pessoais" />
-            <GridPane hgap="12.0" vgap="12.0">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-              </rowConstraints>
-               <children>
-                  <Label text="Matricula" />
-                  <Label text="Label" GridPane.rowIndex="1">
-                     <opaqueInsets>
-                        <Insets />
-                     </opaqueInsets>
-                  </Label>
-                  <Label text="CPF" GridPane.rowIndex="2" />
-                  <TextField fx:id="txtMatricula" GridPane.rowIndex="1" />
-                  <TextField fx:id="txtNome" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Label text="Nome Completo" GridPane.columnIndex="1" />
-                  <Label GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <TextField fx:id="txtCPF" layoutX="342.0" layoutY="43.0" GridPane.rowIndex="3">
-                     <opaqueInsets>
-                        <Insets />
-                     </opaqueInsets>
-                  </TextField>
-                  <Label text="Cargo" GridPane.rowIndex="4" />
-                  <Label text="Data de Contratação" GridPane.rowIndex="6" />
-                  <Label text="Data de Nascimento" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <Label text="Salário" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                  <TextField fx:id="txtCargo" GridPane.rowIndex="5">
-                     <opaqueInsets>
-                        <Insets />
-                     </opaqueInsets>
-                  </TextField>
-                  <TextField fx:id="txtSalario" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                  <DatePicker fx:id="dpNascimento" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <DatePicker fx:id="dpContratacao" GridPane.rowIndex="7" />
-               </children>
-               <VBox.margin>
-                  <Insets left="16.0" right="16.0" />
-               </VBox.margin>
-            </GridPane>
-         </children>
-         <VBox.margin>
-            <Insets bottom="6.0" />
-         </VBox.margin>
-      </VBox>
-      <VBox prefHeight="200.0" prefWidth="100.0" spacing="6.0">
-         <children>
-            <Label text="Endereço" />
-            <GridPane hgap="12.0" vgap="12.0">
-               <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-               </columnConstraints>
-               <rowConstraints>
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-               </rowConstraints>
-               <children>
-                  <Label text="Logradouro" />
-                  <Label text="Label" GridPane.rowIndex="1" />
-                  <Label text="Complemento" GridPane.rowIndex="2" />
-                  <TextField fx:id="txtLogradouro" GridPane.rowIndex="1" />
-                  <TextField fx:id="txtNumero" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Label text="Número" GridPane.columnIndex="1" />
-                  <Label GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <TextField fx:id="txtComplemento" layoutX="342.0" layoutY="43.0" GridPane.rowIndex="3" />
-                  <TextField fx:id="txtBairro" layoutX="10.0" layoutY="103.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <Label text="Cidade" GridPane.rowIndex="4" />
-                  <Label text="CEP" GridPane.rowIndex="6" />
-                  <Label text="Bairro" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <Label text="Estado" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                  <TextField fx:id="txtCidade" GridPane.rowIndex="5" />
-                  <TextField fx:id="txtCEP" GridPane.rowIndex="7" />
-                  <ComboBox fx:id="cbEstado" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-               </children>
-               <VBox.margin>
-                  <Insets left="16.0" right="16.0" />
-               </VBox.margin>
-            </GridPane>
-         </children>
-         <VBox.margin>
-            <Insets />
-         </VBox.margin>
-      </VBox>
-      <HBox prefHeight="86.0" prefWidth="633.0" spacing="15.0">
-         <children>
-            <Button fx:id="btnCadCadastrar" mnemonicParsing="false" text="Cadastrar">
-               <HBox.margin>
-                  <Insets top="6.0" />
-               </HBox.margin>
-            </Button>
-            <Button fx:id="btnCadLimpar" mnemonicParsing="false" text="Limpar">
-               <HBox.margin>
-                  <Insets top="6.0" />
-               </HBox.margin>
-            </Button>
-         </children>
-         <VBox.margin>
-            <Insets left="16.0" />
-         </VBox.margin>
-      </HBox>
-   </children>
-   <padding>
-      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
-   </padding>
+<VBox prefHeight="551.0" prefWidth="808.0" spacing="18.0" style="-fx-base: #1a1d23; -fx-background: #0f1115; -fx-control-inner-background: #1a1d23; -fx-accent: #5b7cfa; -fx-focus-color: #5b7cfa; -fx-faint-focus-color: transparent; -fx-background-color: #0f1115; -fx-font-family: 'Segoe UI'; -fx-font-size: 13px;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ricardo.funcionariop1.controller.CadastroController">
+    <padding>
+        <Insets bottom="24.0" left="28.0" right="28.0" top="24.0" />
+    </padding>
+    <children>
+        <Label style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #f2f3f5;" text="Cadastro de Funcionário" />
+        <VBox spacing="12.0" style="-fx-background-color: #161920; -fx-background-radius: 12; -fx-border-color: #23272f; -fx-border-radius: 12;">
+            <padding>
+                <Insets bottom="18.0" left="18.0" right="18.0" top="18.0" />
+            </padding>
+            <children>
+                <Label style="-fx-font-size: 11px; -fx-font-weight: bold; -fx-text-fill: #6b7280;" text="DADOS PESSOAIS" />
+                <GridPane hgap="14.0" vgap="6.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="ALWAYS" percentWidth="25.0" />
+                        <ColumnConstraints hgrow="ALWAYS" percentWidth="25.0" />
+                        <ColumnConstraints hgrow="ALWAYS" percentWidth="25.0" />
+                        <ColumnConstraints hgrow="ALWAYS" percentWidth="25.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints minHeight="28.0" valignment="BOTTOM" />
+                        <RowConstraints />
+                    </rowConstraints>
+                    <children>
+                        <Label style="-fx-font-size: 12px; -fx-text-fill: #8b92a0;" text="Matrícula" />
+                        <Label style="-fx-font-size: 12px; -fx-text-fill: #8b92a0;" text="Nome Completo" GridPane.columnIndex="1" GridPane.columnSpan="2" />
+                        <Label style="-fx-font-size: 12px; -fx-text-fill: #8b92a0;" text="CPF" GridPane.columnIndex="3" />
+                        <TextField fx:id="txtMatricula" style="-fx-background-radius: 8; -fx-padding: 8 10;" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtNome" style="-fx-background-radius: 8; -fx-padding: 8 10;" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtCPF" promptText="000.000.000-00" style="-fx-background-radius: 8; -fx-padding: 8 10; -fx-prompt-text-fill: #6b7280;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Label style="-fx-font-size: 12px; -fx-text-fill: #8b92a0;" text="Cargo" GridPane.rowIndex="2" />
+                        <Label style="-fx-font-size: 12px; -fx-text-fill: #8b92a0;" text="Salário" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label style="-fx-font-size: 12px; -fx-text-fill: #8b92a0;" text="Data de Nascimento" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Label style="-fx-font-size: 12px; -fx-text-fill: #8b92a0;" text="Data de Contratação" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <TextField fx:id="txtCargo" style="-fx-background-radius: 8; -fx-padding: 8 10;" GridPane.rowIndex="3" />
+                        <TextField fx:id="txtSalario" promptText="0,00" style="-fx-background-radius: 8; -fx-padding: 8 10; -fx-prompt-text-fill: #6b7280;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <DatePicker fx:id="dpNascimento" maxWidth="Infinity" style="-fx-background-radius: 8;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <DatePicker fx:id="dpContratacao" maxWidth="Infinity" style="-fx-background-radius: 8;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                    </children>
+                </GridPane>
+            </children>
+        </VBox>
+        <VBox spacing="12.0" style="-fx-background-color: #161920; -fx-background-radius: 12; -fx-border-color: #23272f; -fx-border-radius: 12;">
+            <padding>
+                <Insets bottom="18.0" left="18.0" right="18.0" top="18.0" />
+            </padding>
+            <children>
+                <Label style="-fx-font-size: 11px; -fx-font-weight: bold; -fx-text-fill: #6b7280;" text="ENDEREÇO" />
+                <GridPane hgap="14.0" vgap="6.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="ALWAYS" percentWidth="25.0" />
+                        <ColumnConstraints hgrow="ALWAYS" percentWidth="25.0" />
+                        <ColumnConstraints hgrow="ALWAYS" percentWidth="25.0" />
+                        <ColumnConstraints hgrow="ALWAYS" percentWidth="25.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints minHeight="28.0" valignment="BOTTOM" />
+                        <RowConstraints />
+                    </rowConstraints>
+                    <children>
+                        <Label style="-fx-font-size: 12px; -fx-text-fill: #8b92a0;" text="Logradouro" GridPane.columnSpan="2" />
+                        <Label style="-fx-font-size: 12px; -fx-text-fill: #8b92a0;" text="Número" GridPane.columnIndex="2" />
+                        <Label style="-fx-font-size: 12px; -fx-text-fill: #8b92a0;" text="CEP" GridPane.columnIndex="3" />
+                        <TextField fx:id="txtLogradouro" style="-fx-background-radius: 8; -fx-padding: 8 10;" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtNumero" style="-fx-background-radius: 8; -fx-padding: 8 10;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtCEP" promptText="00000-000" style="-fx-background-radius: 8; -fx-padding: 8 10; -fx-prompt-text-fill: #6b7280;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Label style="-fx-font-size: 12px; -fx-text-fill: #8b92a0;" text="Complemento" GridPane.rowIndex="2" />
+                        <Label style="-fx-font-size: 12px; -fx-text-fill: #8b92a0;" text="Bairro" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label style="-fx-font-size: 12px; -fx-text-fill: #8b92a0;" text="Cidade" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Label style="-fx-font-size: 12px; -fx-text-fill: #8b92a0;" text="Estado" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <TextField fx:id="txtComplemento" style="-fx-background-radius: 8; -fx-padding: 8 10;" GridPane.rowIndex="3" />
+                        <TextField fx:id="txtBairro" style="-fx-background-radius: 8; -fx-padding: 8 10;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="txtCidade" style="-fx-background-radius: 8; -fx-padding: 8 10;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <ComboBox fx:id="cbEstado" maxWidth="Infinity" style="-fx-background-radius: 8;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                    </children>
+                </GridPane>
+            </children>
+        </VBox>
+        <HBox spacing="10.0">
+            <children>
+                <Button fx:id="btnCadCadastrar" mnemonicParsing="false" onAction="#cadastrar" style="-fx-background-color: #e6e8ec; -fx-background-radius: 8; -fx-text-fill: #0f1115; -fx-font-weight: bold; -fx-padding: 9 22; -fx-cursor: hand;" text="Cadastrar" />
+                <Button fx:id="btnCadLimpar" mnemonicParsing="false" onAction="#limpar" style="-fx-background-color: transparent; -fx-background-radius: 8; -fx-border-color: #2a2e37; -fx-border-radius: 8; -fx-text-fill: #c4c8d0; -fx-padding: 9 22; -fx-cursor: hand;" text="Limpar" />
+            </children>
+        </HBox>
+    </children>
 </VBox>

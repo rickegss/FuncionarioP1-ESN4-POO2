@@ -7,19 +7,25 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.VBox?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="808.0" spacing="12.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ricardo.funcionariop1.controller.RelatoriosController">
-   <children>
-      <Label text="Relatórios de Funcionários" />
-      <Label layoutX="10.0" layoutY="10.0" text="Tipo de Relatório" />
-      <ComboBox fx:id="cbTipoRelatorio" prefWidth="150.0" />
-      <Label text="Filtros" />
-      <VBox fx:id="areaFiltros" prefHeight="200.0" prefWidth="100.0" spacing="8.0" />
-      <Button fx:id="btnGerarRelatorio" mnemonicParsing="false" text="Gerar Relatório" />
-      <Label fx:id="lblResultado" text="Resultado" />
-      <TextArea fx:id="txtResultado" editable="false" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
-   </children>
-   <padding>
-      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
-   </padding>
+<VBox prefHeight="551.0" prefWidth="808.0" spacing="16.0" style="-fx-base: #1a1d23; -fx-background: #0f1115; -fx-control-inner-background: #1a1d23; -fx-accent: #5b7cfa; -fx-focus-color: #5b7cfa; -fx-faint-focus-color: transparent; -fx-background-color: #0f1115; -fx-font-family: 'Segoe UI'; -fx-font-size: 13px;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ricardo.funcionariop1.controller.RelatoriosController">
+    <padding>
+        <Insets bottom="24.0" left="28.0" right="28.0" top="24.0" />
+    </padding>
+    <children>
+        <Label style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #f2f3f5;" text="Relatórios de Funcionários" />
+        <VBox spacing="10.0" style="-fx-background-color: #161920; -fx-background-radius: 12; -fx-border-color: #23272f; -fx-border-radius: 12;">
+            <padding>
+                <Insets bottom="18.0" left="18.0" right="18.0" top="18.0" />
+            </padding>
+            <children>
+                <Label style="-fx-font-size: 12px; -fx-text-fill: #8b92a0;" text="Tipo de Relatório" />
+                <ComboBox fx:id="cbTipoRelatorio" prefWidth="280.0" style="-fx-background-radius: 8;" />
+                <Label style="-fx-font-size: 12px; -fx-text-fill: #8b92a0;" text="Filtros" />
+                <VBox fx:id="areaFiltros" spacing="8.0" />
+                <Button fx:id="btnGerarRelatorio" mnemonicParsing="false" style="-fx-background-color: #e6e8ec; -fx-background-radius: 8; -fx-text-fill: #0f1115; -fx-font-weight: bold; -fx-padding: 9 22; -fx-cursor: hand;" text="Gerar Relatório" />
+            </children>
+        </VBox>
+        <Label fx:id="lblResultado" style="-fx-font-size: 12px; -fx-text-fill: #8b92a0;" text="Resultado" />
+        <TextArea fx:id="txtResultado" editable="false" style="-fx-control-inner-background: #161920; -fx-background-radius: 8; -fx-font-family: 'Consolas';" VBox.vgrow="ALWAYS" />
+    </children>
 </VBox>
