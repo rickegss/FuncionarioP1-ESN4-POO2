@@ -1,0 +1,12 @@
+matricula;nome;CPF;dataNascimento;cargo;salario;dataContratacao;logradouro;numero;complemento;bairro;cidade;estado;CEP
+100001;Ana Beatriz Martins;52998224725;1995-03-14;Analista de TI;4500.00;2022-06-13;Rua das Acácias;120;Apto 302;Setor Bueno;Goiânia;GO;74230010
+100002;Bruno Henrique Costa;11144477735;1990-11-22;Desenvolvedor Java;6800.00;2021-02-08;Avenida T-4;850;Casa 2;Setor Serrinha;Goiânia;GO;74230035
+100003;Camila Rodrigues Alves;12345678909;1988-07-09;Gerente de RH;8200.00;2019-09-16;Rua 7;45;Sala 4;Setor Central;Goiânia;GO;74023020
+100004;Diego Ferreira Lima;98765432100;1998-01-30;Assistente Administrativo;2300.00;2024-01-15;Rua 12;210;Casa;Jardim América;Goiânia;GO;74275010
+100006;Felipe Augusto Mendes;11144477735;1985-12-02;Desenvolvedor Java;7500.00;2018-04-23;Rua 103;75;Apto 101;Setor Sul;Goiânia;GO;74080020
+100007;Gabriela Souza Ribeiro;12345678909;2000-09-25;Estagiário de TI;1600.00;2025-02-10;Rua do Comércio;90;Casa;Centro;Aparecida de Goiânia;GO;74980000
+100008;Henrique Oliveira Santos;98765432100;1992-06-11;Analista de TI;4800.00;2022-11-07;Rua das Flores;330;Apto 12;Centro;Anápolis;GO;75020010
+100009;Isabela Carvalho Mendes;52998224725;1987-04-06;Coordenador de Projetos;9500.00;2017-03-20;Avenida Paulista;1000;Conjunto 51;Bela Vista;São Paulo;SP;01310100
+100010;João Pedro Almeida;11144477735;1996-10-19;Assistente Administrativo;2500.00;2023-07-17;Rua XV de Novembro;155;Apto 4;Centro;Curitiba;PR;80020010
+100011;Larissa Gomes Pereira;12345678909;1991-02-27;Analista Financeiro;5700.00;2020-05-04;Avenida Brasil;640;Casa 1;Centro;Uberlândia;MG;38400100
+100012;Marcos Vinícius Rocha;98765432100;1983-08-13;Gerente de RH;9000.00;2016-10-10;Rua dos Andradas;420;Apto 801;Centro Histórico;Porto Alegre;RS;90020007
